@@ -1,0 +1,48 @@
+
+.certificate-body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    display: table;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .certificate-container {
+    border: 12px solid rgb(229, 123, 31);
+    width: 750px;
+    height: 563px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .certificate-logo {
+    color: rgb(16, 96, 117);
+    font-family : cursive ;
+    font-size :larger;
+    font-weight: 500;
+  }
+  
+  .certificate-marquee {
+    color: green;
+    font-size: 48px;
+    margin: 20px;
+  }
+  
+  .certificate-assignment {
+    margin: 20px;
+  }
+  
+  .certificate-person {
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    font-style: italic;
+    margin: 20px auto;
+    width: 400px;
+  }
+  
+  .certificate-reason {
+    margin: 20px;
+  }
+  

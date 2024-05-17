@@ -1,0 +1,148 @@
+/* Feedback.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    width: 50%;
+  }
+  
+  .section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .image-container {
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .feedbacks {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .feedbacks ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feedbacks li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    color: #fca503;
+    font-size: 1.3rem;
+  }
+  
+  .feedback-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .feedback-form h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-form .mb-3 {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form label {
+    font-weight: bold;
+  }
+  
+  .feedback-form select,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .feedback-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      width: 100%;
+    }
+  
+    .image-container {
+      height: auto;
+    }
+  }
+  
+  /* Adding background color to the section */
+  .section.with-background {
+    background-color: #fca503; /* Background color similar to feedback rating */
+    color: #fff; /* Text color */
+  }
+  
+  .section.with-background h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .section.with-background .feedbacks ul {
+    color: #fff; /* Text color */
+  }
+  
+  .section.with-background .feedbacks li {
+    border-bottom: 1px solid #fff; /* Border color */
+  }
+  
+  .section.with-background .star {
+    color: #fff; /* Star color */
+  }
+
+
+  .heading {
+    background-color: #e0e0e0;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heading:hover {
+    background-color: #bdbdbd;
+  }

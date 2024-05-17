@@ -1,0 +1,17 @@
+/* Login.css */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .col-md-6 {
+      order: 2; /* Change the order of columns for smaller screens */
+    }
+  
+    .d-none {
+      display: block !important; /* Show the image on smaller screens */
+    }
+  
+    .d-md-flex {
+      display: none !important; /* Hide the image on screens larger than 768px */
+    }
+  }
+  

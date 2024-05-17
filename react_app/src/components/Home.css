@@ -1,0 +1,49 @@
+.cardsh {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardsh:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-hoversh:hover {
+  transform: scale(1.05);
+}
+.bg-highlightsh:hover {
+  background-color: #F8D7DA !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.text-highlightsh:hover {
+  color: #DC3545 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+
+  .img-containersh {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .img-containersh img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .img-containersh:hover img {
+    transform: scale(1.1);
+  }
+  
+
+  .image-container1 {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-container1:hover img {
+      transform: scale(1.1); 
+      transition: transform 0.3s ease-in-out; 
+      }
+  
+      
