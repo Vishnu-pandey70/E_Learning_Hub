@@ -21,6 +21,7 @@ import EditCourse from "./components/EditCourse";
 import Certificate from "./components/Certificate";
 import Contact from "./components/Contact";
 import ForgotPassword from "./components/Forgotpassword";
+import Userenrollcourse from "./components/Userenrollcourse";
 
 
 function App() {
@@ -50,6 +51,8 @@ function App() {
                 <Route path="/edit-course/:courseId" element={<EditCourse/>} />
                 <Route path="/certificate/:courseId" element={<Certificate/>} />
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
+
+                <Route path="/Userenrollcourse" element={<Userenrollcourse />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>

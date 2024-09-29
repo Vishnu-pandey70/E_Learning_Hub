@@ -96,7 +96,8 @@ app.put('/edit-course/:courseId', authMiddleware.verifyToken, userController.edi
 
 app.delete('/delete-course/:courseId',authMiddleware.verifyToken, userController.deleteCourse);
 
-
+// enrolled user
+app.get('/courses/enrollments', authMiddleware.verifyToken, userController.getallenrolleduser);
 
 
 const razorpay = new Razorpay({
@@ -204,5 +205,44 @@ app.post('/razorpay/payment/success', authMiddleware.verifyToken, async (req, re
     res.status(500).json({ message: 'Failed to process payment. Please try again later.' });
   }
 });
+
+
+
+// Route to show all courses and the details of users enrolled in each
+app.get('/courses/enrollments', async (req, res) => {
+  try {
+    const courses = await Course.find({}).select('title description price mentor');
+
+    const courseDetails = [];
+
+    for (const course of courses) {
+      const enrolledUsers = await Users.find({ courses: course._id }).select('username email mobile');
+
+      const enrolledUserDetails = enrolledUsers.map(user => ({
+        username: user.username,
+        email: user.email,
+        mobile: user.mobile
+      }));
+
+      courseDetails.push({
+        courseTitle: course.title,
+        courseDescription: course.description,
+        coursePrice: course.price,
+        mentor: course.mentor,
+        enrolledUsersCount: enrolledUsers.length,
+        enrolledUsers: enrolledUserDetails
+      });
+    }
+
+    res.status(200).json({
+      message: 'Course enrollments retrieved successfully.',
+      courses: courseDetails
+    });
+  } catch (error) {
+    console.error('Error fetching course enrollments:', error);
+    res.status(500).json({ message: 'Failed to retrieve course enrollments. Please try again later.' });
+  }
+});
+
 
 

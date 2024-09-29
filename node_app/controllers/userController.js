@@ -362,7 +362,7 @@ exports.addLecture = async (req, res) => {
   const { title, video, notes, assignment } = req.body;
   // console.log(req.body);
 
-  if (!title || !video || !notes|| !assignment) {
+  if (!title || !video || !notes) {
     return res.status(400).json({ message: 'All fields are required.' });
   }
   try {
@@ -658,4 +658,58 @@ exports.deleteCourse=async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 };
+
+
+
+// Route to show all courses and the details of users enrolled in each
+exports.getallenrolleduser = async (req, res) => {
+  try {
+    const userId = req.user.userId;
+
+    const user = await Users.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    if (user.role !== 'admin') {
+      return res.status(403).json({ message: 'Not Admin' });
+    }
+
+    const courses = await Course.find({}).select('title description price mentor');
+
+    const courseDetails = [];
+
+    for (const course of courses) {
+      const enrolledUsers = await Users.find({ courses: course._id }).select('username email mobile');
+
+      const enrolledUserDetails = enrolledUsers.map(user => ({
+        username: user.username,
+        email: user.email,
+        mobile: user.mobile
+      }));
+
+      courseDetails.push({
+        courseTitle: course.title,
+        courseDescription: course.description,
+        coursePrice: course.price,
+        mentor: course.mentor,
+        enrolledUsersCount: enrolledUsers.length,
+        enrolledUsers: enrolledUserDetails
+      });
+    }
+
+    // Send the course details as a response
+    res.status(200).json({
+      message: 'Course enrollments retrieved successfully.',
+      courses: courseDetails
+    });
+  } catch (error) {
+    console.error('Error fetching course enrollments:', error.message || error);
+    res.status(500).json({ message: 'Failed to retrieve course enrollments. Please try again later.', error: error.message });
+  }
+};
+
+
+
 

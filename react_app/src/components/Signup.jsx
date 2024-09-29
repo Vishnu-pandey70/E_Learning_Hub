@@ -114,6 +114,7 @@ function Signup() {
                 <option value="admin">Admin</option>
               </select>
             </div>
+            
             <div className="mb-3">
               <button className="w-100 btn btn-primary" onClick={handleSignup} >Create account</button>
             </div>

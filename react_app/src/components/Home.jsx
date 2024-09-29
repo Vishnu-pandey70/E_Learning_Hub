@@ -171,7 +171,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row    justify-content-center">
         <div className="col-md-3 mb-4" >
           <div className="card  cardsh  text-center " style={{ backgroundColor: '#e8f7f5' }}>
-            <img src="https://elevatifier.com/images/10%20(2).png" alt="Image 1"className=" rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
+            <img src="https://www.shutterstock.com/shutterstock/photos/767491552/display_1500/stock-vector-education-tree-of-knowledge-and-open-book-effective-modern-education-template-design-back-to-767491552.jpg" alt="Image 1"className=" rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
             <div className="card-body">
               <h5 className="card-title">Open to All</h5>
               <p className="card-text">Anyone from any domain can apply</p>
@@ -183,7 +183,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
         </div>
         <div className="col-md-3 mb-3">
           <div className="card  cardsh  text-center" style={{ backgroundColor: '#fdecef' }}>
-            <img src="https://elevatifier.com/images/9%20(2).png" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
+            <img src="https://www.shutterstock.com/shutterstock/photos/1510434773/display_1500/stock-vector-education-certificate-template-diploma-vector-luxury-modern-design-award-background-gift-1510434773.jpg" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
             <div className="card-body">
               <h5 className="card-title">Certification</h5>
               <p className="card-text">Get a Certificate for your resume & portfolio</p>
@@ -197,7 +197,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
 
           <div className="col-md-3 mb-3">
             <div className="card  cardsh  text-center"  style={{ backgroundColor: '#eceffc' }}>
-              <img src="https://elevatifier.com/images/8%20(2).png" alt="Image 1"className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
+              <img src="https://s34315.pcdn.co/wp-content/uploads/LLL-Image.jpg" alt="Image 1"className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
               <div className="card-body">
                 <h5 className="card-title">Life Time Access</h5>
                 <p className="card-text">Nonstop learning from anywhere anytime</p>
@@ -211,7 +211,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
         
         <div className="col-md-3 mb-3">
           <div className="card  cardsh  text-center" style={{ backgroundColor: '#fef7e8' }}>
-            <img src="https://elevatifier.com/images/7%20(2).png" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
+            <img src="https://www.shutterstock.com/image-vector/affordable-education-concept-icon-student-600nw-1637576440.jpg" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
             <div className="card-body">
               <h5 className="card-title">Affordable Price</h5>
               <p className="card-text">Cheapest price to give learning to everone</p>
@@ -227,7 +227,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row  mt-4 justify-content-center">
         <div className="col-md-7 ">
         <div class="image-container1">
-    <img src="https://elevatifier.com/assets/images/about-banner.jpg" alt="Section 3 Image" class="img-fluid" />
+    <img src="https://media.istockphoto.com/id/499924122/photo/e-learning-concept-with-a-teacher-presenting-online-education-program.jpg?s=1024x1024&w=is&k=20&c=iNG1o7RsHYZmXtICAbTdGeJZXjSr-EgOOm7crGPdtco=" alt="Section 3 Image" class="img-fluid" />
   </div>
             </div>
         <div className="col-md-5 d-flex align-items-center">
@@ -292,7 +292,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row justify-content-center mt-4">
         <div className="col-md-10">
           <div className="img-containersh">
-          <img src="https://elevatifier.com/assets/images/video-banner.jpg" alt="Large Image" className="img-fluid rounded-start rounded-end rounded-bottom" />
+          <img src="https://media.gettyimages.com/id/183304802/photo/young-team-working-on-laptop-computers-and-writing.jpg?s=612x612&w=0&k=20&c=-rUlt2Q2d174iB9_dPXZsDvrceORKe4TY43ektSDqnk=" alt="Large Image" className="img-fluid rounded-start rounded-end rounded-bottom" />
           </div>
         </div>
       </div>
